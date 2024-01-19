@@ -21,7 +21,7 @@ function searchCountry() {
     return;
   }
   
-  fetch(`https://restcountries.com/v3.1/all?fields=name,flags`)
+  fetch(`https://restcountries.com/v3.1/name/${searchInputValue}`)
     .then(response => {
       if (!response.ok) { 
         throw new Error('Network response was not ok');
