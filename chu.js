@@ -22,7 +22,8 @@ function searchCountry() {
     return;
   }
 
-  fetch(`https://restcountries.com/v3.1/name/${searchInputValue}`)
+  const fetch = require('node-fetch');
+  fetch('https://restcountries.eu/rest/v2/all')
     .then(response => {
       if (!response.ok) { 
         throw new Error('Network response was not ok');
