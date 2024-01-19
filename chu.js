@@ -20,10 +20,8 @@ function searchCountry() {
     displayErrorMessage('Please enter a country name');
     return;
   }
-
-  fetch(`https://restcountries.eu/rest/v3.1/name/${searchInputValue}`);
   
-  fetch(`https://restcountries.com/v3.1/name/${searchInputValue}`)
+  fetch(`https://restcountries.com/v3.1/name/${searchInputValue}`);
     .then(response => {
       if (!response.ok) { 
         throw new Error('Network response was not ok');
