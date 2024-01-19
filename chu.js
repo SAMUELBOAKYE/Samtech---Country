@@ -22,7 +22,7 @@ function searchCountry() {
   }
 
   const fetch = require('node-fetch');
-  fetch('https://restcountries.eu/rest/v2/all')
+  fetch(`https://restcountries.eu/rest/v3.1/name/${searchInputValue}`);
   
   fetch(`https://restcountries.com/v3.1/name/${searchInputValue}`)
     .then(response => {
