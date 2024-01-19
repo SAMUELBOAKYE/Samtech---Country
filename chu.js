@@ -21,7 +21,6 @@ function searchCountry() {
     return;
   }
 
-  const fetch = require('node-fetch');
   fetch(`https://restcountries.eu/rest/v3.1/name/${searchInputValue}`);
   
   fetch(`https://restcountries.com/v3.1/name/${searchInputValue}`)
