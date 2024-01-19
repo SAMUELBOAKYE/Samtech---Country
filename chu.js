@@ -22,7 +22,7 @@ function searchCountry() {
   }
   
   fetch(`https://restcountries.com/v3.1/name/${searchInputValue}`);
-    then(response => {
+    .then(response => {
       if (!response.ok) { 
         throw new Error('Network response was not ok');
       }
