@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Samtech - Country Details</title>
+  <style>
+    
+    .clicked{
+      background: #333;
+      color: #fff;
+      transition: all 0.5s ease-in-out;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color:whitesmoke;
+      background: url(./oo.jpeg);
+    }   
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(5, 0, 0, 0.1);
+    }
+
+    /* Style country details */
+    #country-details {
+      margin-top: 20px;
+    }
+
+    #country-details img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Samtech - country-details </h1>
+    <input type="text" id="searchInput" class="submit" placeholder="Enter a country name">
+    <button onclick="searchCountry()">Search</button>
+    <div id="country-details"></div>
+  </div>
+
+  <script src="./chu.js"></script>
+</body>
+</html>
