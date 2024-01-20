@@ -46,13 +46,12 @@ function searchCountry() {
 
 function displayCountryDetails(country) {
   let countryDetailsDiv = document.getElementById('country-details');
+  const currency = Object.values(data.currencies)[0].name;
   countryDetailsDiv.innerHTML = `
     <h2>${country.name.common}</h2>
     <p>Capital: ${country.capital}</p>
     <p>Population: ${country.population}</p>
-<p>Cultural: ${country.culture}</p>
-<p>Currency: ${country.currency}</p>
-<p>Food: ${country.food}</p>
+    <p class="country__row">${currency}</p>
     <p>Language(s): ${Object.values(country.languages).join(', ')}</p>
     <img src="${country.flags.png}" alt="${country.name.common} flag">
 
