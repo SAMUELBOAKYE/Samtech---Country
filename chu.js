@@ -20,8 +20,11 @@ function searchCountry() {
     displayErrorMessage('Please enter a country name');
     return;
   }
+
+
   
-  fetch(`https://restcountries.com/v3.1/name/${searchInputValue}`)
+  // fetch(`https://restcountries.com/v3.1/name/${searchInputValue}`)
+  fetch(`https://restcountries.com/v3.1/all`)
     .then(response => {
       if (!response.ok) { 
         throw new Error('Network response was not ok');
@@ -48,12 +51,8 @@ function displayCountryDetails(country) {
     <h2>${country.name.common}</h2>
     <p>Capital: ${country.capital}</p>
     <p>Population: ${country.population}</p>
-    <p>Region: ${country.region}</p>
-    <p>History: ${country.history}</p>
-    <p>Universities: ${country.universities}</p>
-<p>Cultural: ${country.cultural}</p>
+<p>Cultural: ${country.culture}</p>
 <p>Currency: ${country.currency}</p>
-<p>Climate: ${country.climate}</p>
 <p>Food: ${country.food}</p>
     <p>Language(s): ${Object.values(country.languages).join(', ')}</p>
     <img src="${country.flags.png}" alt="${country.name.common} flag">
