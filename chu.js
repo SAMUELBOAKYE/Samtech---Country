@@ -49,6 +49,12 @@ function displayCountryDetails(country) {
     <p>Capital: ${country.capital}</p>
     <p>Population: ${country.population}</p>
     <p>Region: ${country.region}</p>
+    <p>History: ${country.history}</p>
+    <p>Universities: ${country.universities}</p>
+<p>Cultural: ${country.cultural}</p>
+<p>Currency: ${country.currency}</p>
+<p>Climate: ${country.climate}</p>
+<p>Food: ${country.food}</p>
     <p>Language(s): ${Object.values(country.languages).join(', ')}</p>
     <img src="${country.flags.png}" alt="${country.name.common} flag">
   `;
