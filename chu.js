@@ -23,8 +23,7 @@ function searchCountry() {
 
 
   
-  // fetch(`https://restcountries.com/v3.1/name/${searchInput?Value}`)
-  fetch('https://restcountries.com/v3.1/all')
+  fetch(`https://restcountries.com/v3.1/name/${searchInputValue}`)
     .then(response => {
       if (!response.ok) { 
         throw new Error('Network response was not ok');
