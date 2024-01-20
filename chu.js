@@ -46,7 +46,7 @@ function searchCountry() {
 
 function displayCountryDetails(country) {
   let countryDetailsDiv = document.getElementById('country-details');
-  const currency = Object.values(data.currencies)[0].name;
+  const currency = Object.values(country.currencies)[0].name;
   countryDetailsDiv.innerHTML = `
     <h2>${country.name.common}</h2>
     <p>Capital: ${country.capital}</p>
