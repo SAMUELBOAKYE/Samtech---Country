@@ -51,7 +51,7 @@ function displayCountryDetails(country) {
     <h2>${country.name.common}</h2>
     <p>Capital: ${country.capital}</p>
     <p>Population: ${country.population}</p>
-    <p class="country__row">${currency}</p>
+    <p class="country__row"> Currency: ${currency}</p>
     <p>Language(s): ${Object.values(country.languages).join(', ')}</p>
     <img src="${country.flags.png}" alt="${country.name.common} flag">
 
