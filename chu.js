@@ -20,9 +20,6 @@ function searchCountry() {
     displayErrorMessage('Please enter a country name');
     return;
   }
-
-  const fetch = require('node-fetch');
-  fetch('https://restcountries.eu/rest/v2/all')
   
   fetch(`https://restcountries.com/v3.1/name/${searchInputValue}`)
     .then(response => {
